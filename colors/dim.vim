@@ -1,7 +1,7 @@
-highlight clear
+source $VIMRUNTIME/colors/vim.lua
 
-if exists("syntax_on")
-  syntax reset
+if has("termguicolors")
+  set notermguicolors
 endif
 
 exec "source " . expand('<sfile>:p:h') . "/default-light.vim"
